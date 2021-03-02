@@ -1,0 +1,30 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "10.2.4",
+    "browser-sync": "2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp css",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irena-sh/testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irena-sh/testing/issues"
+  },
+  "homepage": "https://github.com/irena-sh/testing#readme",
+  "description": ""
+}
