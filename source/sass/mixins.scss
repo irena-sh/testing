@@ -1,0 +1,39 @@
+@mixin visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  
+@mixin reset-child-margins() {
+  & > :first-child {
+    margin-top: 0;
+  }
+  
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin container() {
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+  
+@mixin container-fluid() {
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
