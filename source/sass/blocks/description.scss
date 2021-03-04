@@ -1,0 +1,25 @@
+.description {
+  @include container;
+  padding-top: 10px;
+}
+
+.description__list {
+  @include reset-list;
+  text-align: left;
+}
+
+.description__item {
+  display: none;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.description__item:first-child {
+  display: block;
+}
+
+.description__item p {
+  margin-top: 17px;
+  margin-bottom: 0;
+  padding-bottom: 43px;
+}
