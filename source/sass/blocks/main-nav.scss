@@ -9,9 +9,9 @@
 }
 
 .main-nav__menu {
+  @include container;
   display: flex;
   flex-direction: column;
-  @include container;
   list-style: none;
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.11);
   width: 335px;
@@ -22,7 +22,7 @@
 //   border-top: 1px solid #000;
 // }
 
-.main-nav__menu a {
+.main-nav__link {
   display: block;
   margin: 0;
   text-decoration: none;
