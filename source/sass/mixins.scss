@@ -30,10 +30,15 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+
+  @media (min-width: $desktops) {
+    width: 1539px;
+  }
 }
   
-@mixin container-fluid() {
+@mixin container-phones($paddings: 0) {
   width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: $paddings;
+  padding-right: $paddings;
+  margin: 0 auto;
 }

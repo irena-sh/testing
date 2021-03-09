@@ -6,49 +6,54 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--full">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="Logo" width="120" height="38">
         </a>
-        <button class="page-header__toggle" type="button"><span></span></button>
+        <button class="page-header__toggle" type="button"><span class="page-header__button"></span></button>
+        <ul class="page-header__menu">
+          <li class="page-header__item page-header__item--active"><a class="page-header__link" href="#">Magnificent</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Unrivalled</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Inimitable</a></li>
+        </ul>
       </div>
     </header>
-    <div class="name">
-      <div class="name__info">
-        <p class="name__text">The name is Bond. James Bond.</p>
+    <div class="main">
+      <div class="name">
+        <div class="name__info">
+          <h1 class="name__text">The name is Bond. James Bond.</h1>
+        </div>
       </div>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span></span></button>
-      <div class="main-nav__wrapper">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="main-nav__button"></span></button>
         <ul class="main-nav__menu">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Magnificent</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Magnificent</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Unrivalled</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Inimitable</a></li>
         </ul>
-      </div>
-    </nav>
-    <section class="description">
-      <ul class="description__list">
-        <li class="description__item">
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <img src="img/woman-mobile.jpg" alt="Woman" width="335" height="197">
-        </li>
-        <!-- <li class="description__item">
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <img src="http://placehold.it/335x197" alt="Logo" width="335" height="197">
-        </li>
-        <li class="description__item">
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <img src="http://placehold.it/335x197" alt="Logo" width="335" height="197">
-        </li> -->
-      </ul>
-      <div class="reviews__flip flip">
-        <span class="flip__item pagination__item‐‐active"></span>
-        <span class="flip__item"></span>
-        <span class="flip__item"></span>
-      </div>
-    </section>
+      </nav>
+      <section class="description">
+        <ul class="description__list">
+          <li class="description__item">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <img src="img/woman-mobile.jpg" alt="Woman" width="335" height="197">
+          </li>
+          <li class="description__item">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <img src="img/phone-mobile.jpg" alt="Logo" width="335" height="197">
+          </li>
+          <li class="description__item">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <img src="img/office.jpg" alt="Logo" width="335" height="197">
+          </li>
+        </ul>
+        <div class="reviews__flip flip">
+          <span class="flip__item flip__item‐‐active"></span>
+          <span class="flip__item"></span>
+          <span class="flip__item"></span>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

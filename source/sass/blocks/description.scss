@@ -1,6 +1,14 @@
 .description {
   @include container;
   padding-top: 10px;
+
+  @media (min-width: $desktops) {
+    width: 702px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 284px;
+  }
 }
 
 .description__list {

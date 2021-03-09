@@ -50,6 +50,14 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto; }
+  @media (min-width: 1539px) {
+    .page-header {
+      width: 1539px; } }
+  @media (min-width: 1539px) {
+    .page-header {
+      min-height: 87px; } }
+  .page-header--full {
+    position: relative; }
 
 .page-header__logo {
   height: 30px;
@@ -57,19 +65,75 @@ img {
   vertical-align: top;
   margin-top: 15px;
   margin-bottom: 15px; }
+  @media (min-width: 660px) {
+    .page-header__logo {
+      margin-top: 23px;
+      margin-bottom: 34px; } }
 
 .page-header__toggle {
   position: absolute;
-  top: 21px;
-  right: 55px; }
+  top: 26px;
+  right: 20px;
+  width: 24px;
+  height: 19px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+  @media (min-width: 1539px) {
+    .page-header__toggle {
+      display: none; } }
+
+.page-header__wrapper {
+  width: 100%; }
+  @media (min-width: 1539px) {
+    .page-header__wrapper {
+      width: 1539px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex; } }
+
+.page-header__menu {
+  display: none;
+  list-style: none; }
+  @media (min-width: 1539px) {
+    .page-header__menu {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: flex-end;
+      padding-left: 900px;
+      padding-top: 15px; } }
+
+.page-header__item {
+  padding-right: 35px; }
+
+.page-header__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  text-transform: uppercase; }
+  .page-header__link[href]:hover, .page-header__link[href]:focus {
+    color: #b31db6; }
+
+.page-header__item--active {
+  color: #940b97; }
 
 .main-nav__toggle {
   position: absolute;
   top: 215px;
   right: 55px; }
+  @media (min-width: 1539px) {
+    .main-nav__toggle {
+      display: none; } }
 
 .main-nav {
   margin-top: 63px; }
+  @media (min-width: 1539px) {
+    .main-nav {
+      margin-top: 314px;
+      margin-left: 241px;
+      margin-right: 64px; } }
 
 .main-nav__menu {
   width: 375px;
@@ -82,6 +146,12 @@ img {
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.11);
   width: 335px;
   padding-left: 0; }
+  @media (min-width: 1539px) {
+    .main-nav__menu {
+      width: 1539px; } }
+  @media (min-width: 1539px) {
+    .main-nav__menu {
+      width: 203px; } }
 
 .main-nav__link {
   display: block;
@@ -99,6 +169,15 @@ img {
   padding-right: 20px;
   margin: 0 auto;
   padding-top: 18px; }
+  @media (min-width: 1539px) {
+    .name {
+      width: 1539px; } }
+  @media (min-width: 1539px) {
+    .name {
+      width: 322px;
+      padding-top: 0;
+      padding-left: 0;
+      margin: 0; } }
 
 .name__info {
   padding-top: 21px;
@@ -116,6 +195,9 @@ img {
     background-repeat: no-repeat;
     background-position: center top;
     z-index: -1; }
+    @media (min-width: 1539px) {
+      .name__info::after {
+        background-image: none; } }
 
 .name__text {
   margin: 0;
@@ -125,6 +207,10 @@ img {
   background: linear-gradient(to right, #2EC73D, #7C64C2 15%, #B31DB6 45%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+  @media (min-width: 1539px) {
+    .name__text {
+      font-size: 63px;
+      line-height: 79px; } }
 
 .description {
   width: 375px;
@@ -132,6 +218,16 @@ img {
   padding-right: 20px;
   margin: 0 auto;
   padding-top: 10px; }
+  @media (min-width: 1539px) {
+    .description {
+      width: 1539px; } }
+  @media (min-width: 1539px) {
+    .description {
+      width: 702px;
+      padding-right: 0;
+      padding-left: 0;
+      margin: 0;
+      margin-top: 284px; } }
 
 .description__list {
   margin: 0;
@@ -170,5 +266,22 @@ img {
   margin: -1px;
   padding: 0;
   border: 0; }
+
+@media (min-width: 1539px) {
+  .main {
+    width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 69px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("../img/background-text-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top left; } }
+  @media (min-width: 1539px) and (min-width: 1539px) {
+    .main {
+      width: 1539px; } }
 
 /*# sourceMappingURL=style.css.map */

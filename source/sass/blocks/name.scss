@@ -1,6 +1,13 @@
 .name {
   @include container;
   padding-top: 18px;
+
+  @media (min-width: $desktops) {
+    width: 322px;
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 .name__info {
@@ -20,6 +27,10 @@
     background-repeat: no-repeat;
     background-position: center top;
     z-index: -1;
+
+    @media (min-width: $desktops) {
+      background-image: none;
+    }
   }
 }
 
@@ -32,4 +43,9 @@
   45%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+  @media (min-width: $desktops) {
+    font-size: 63px;
+    line-height: 79px;
+  }
 }

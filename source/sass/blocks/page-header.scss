@@ -5,6 +5,14 @@
   padding-right: 0px;
   padding-left: 0px;
   @include container;
+
+  @media (min-width: $desktops) {
+    min-height: 87px;
+  }
+
+  &--full {
+    position: relative;
+  }
 }
 
 .page-header__logo {
@@ -13,10 +21,74 @@
   vertical-align: top;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablets) {
+    margin-top: 23px;
+    margin-bottom: 34px;
+  }
 }
 
 .page-header__toggle {
   position: absolute;
-  top: 21px;
-  right: 55px;
+  top: 26px;
+  right: 20px;
+  width: 24px;
+  height: 19px;
+  padding: 0;
+  // background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: $desktops) {
+    display: none;
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+
+  @media (min-width: $desktops) {
+    width: 1539px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.page-header__menu {
+  display: none;
+  list-style: none;
+
+  @media (min-width: $desktops) {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 900px;
+    padding-top: 15px;
+  }
+}
+
+.page-header__item {
+  padding-right: 35px;
+}
+
+.page-header__link {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $purple;
+  }
+}
+
+.page-header__item {
+  &--active {
+    color: #940b97;
+
+  }
 }

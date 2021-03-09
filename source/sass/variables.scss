@@ -1,6 +1,7 @@
 $white: #ffffff;
 $black: #000000;
 $black-lighter: #1d1d1d;
+$purple: #b31db6;
 
 $font-color: $black-lighter;
 $bg--body: $white;
@@ -8,3 +9,9 @@ $bg--body: $white;
 $font: "Roboto", "Arial", sans-serif;
 $font-size: 18px;
 $line-height: 26px;
+
+$phones: 375px;
+$phones-max: 659px;
+$tablets: 660px;
+$tablets-max: 959px;
+$desktops: 1539px;

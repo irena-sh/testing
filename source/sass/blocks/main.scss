@@ -1,0 +1,12 @@
+.main {
+  @media (min-width: $desktops) {
+    @include container;
+    display: flex;
+    padding-top: 69px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("../img/background-text-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+}
