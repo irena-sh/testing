@@ -12,9 +12,9 @@
   margin-top: 63px;
 
   @media (min-width: $desktops) {
-    margin-top: 314px;
+    margin-top: 194px;
     margin-left: 241px;
-    margin-right: 64px;
+    margin-right: 20px;
   }
 }
 
@@ -29,6 +29,9 @@
 
   @media (min-width: $desktops) {
     width: 203px;
+    box-shadow: none;
+    width: 203px;
+    text-align: end;
   }
 }
 
@@ -45,4 +48,12 @@
   line-height: 32px;
   padding: 16px 22px;
   color: #858a8a;
+
+  @media (min-width: $desktops) {
+    font-size: 26px;
+    
+    &[href]:hover {
+      color: $black;
+    }
+  }
 }

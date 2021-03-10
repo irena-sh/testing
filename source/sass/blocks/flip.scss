@@ -1,9 +1,66 @@
 .flip {
-  height: 12px;
-  background-color: $black;
-  max-width: 200px;
-  margin-top: 10px;
+  max-width: 96px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  font-size: 0;
+  text-align: center;
+  background-color: inherit;
+
+  @media (min-width: $desktops) {
+    max-width: 86px;
+  }
+}
+
+.flip__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 1px;
+  margin-right: 1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($gray, 0.3);
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: rgba($gray, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($gray, 0.1);
+  }
+
+  &‐‐active {
+    cursor: default;
+  }
+
+  &‐‐active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    border: 3px solid $gray;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  &‐‐active:hover::before {
+    background-color: transparent;
+  }
 }
